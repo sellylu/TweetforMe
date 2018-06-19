@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tweet for Me</title>
+	<meta charset="UTF-8">
+	
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link href="../static/stylesheets/styles.css" rel="stylesheet" type="text/css">
+	<style>
+	.recom {
+		margin: 1em;
+	}
+	</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/" style="color: #dddddd;">Tweet for Me</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"></div>
+		</div>
+	</nav>
+	<header class="jumbotron" id="overview">
+		<div class="container subhead">
+			<div class="row">
+				<div class="col-md-12" id="space">
+				</div>
+				<div class="col-md-12">
+					<form action="/write" method="post">
+						<div class="row" align="center">
+							<button class="btn btn-success btn-lg recom" name="recom" value="joy" type="submit">Joy</button>
+							<button class="btn btn-danger btn-lg recom" name="recom" value="anger" type="submit">Anger</button>
+							<button class="btn btn-primary btn-lg recom" name="recom" value="sadness" type="submit">Sadness</button>
+							<button class="btn btn-lg recom" name="recom" value="fear" type="submit">Fear</button>
+							<button class="btn btn-info btn-lg recom" name="recom" value="surprise" type="submit">Surprise</button>
+							<button class="btn btn-warning btn-lg recom" name="recom" value="love" type="submit">Love</button>
+						</div>
+						<div class="row input-group">
+							<span class="input-group-addon">#</span>
+							<input type="text" id="search-bar" class="form-control" placeholder="Enter tags here" name="tags" value=''>
+						</div>
+					</form>
+					<br>
+				</div>
+			</div>
+
+			<div class="row" id='display'>
+				<div class="col-md-8 col-md-offset-2" style="background-color: #eee; border-radius: 10px;">
+					<h3 id='output' style="text-align: justify;"></h3>
+					<a href="https://twitter.com/intent/tweet?button_hashtag=TweetforMe&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-lang="en" data-text="{{result}}" data-show-count="false">\Tweet #TweetforMe</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</div>
+			<script>
+				if (window.location.pathname == "/") {
+					$('#display').hide();
+				} else {
+					$('#display').show();
+					$('#output').html('{{result}}');//+String.fromCodePoint('{{result}}'));
+				}
+			</script>
+		</div>
+	</header>
+</body>
+
+
+<!-- <script src="../static/javascripts/flickr.js"></script> -->
+<script src="../static/javascripts/bootstrap.js"></script>
+</html>
