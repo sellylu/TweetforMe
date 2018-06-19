@@ -14,15 +14,15 @@
 1. Channel Model: Statistical model
 2. Language Model: Recurrent Neural Network(RNN)
 
-![rnn_structure](https://github.com/sellylu/TweetforMe/tree/master/image/rnn_struc.png "RNN Structure")
+![rnn_structure](https://github.com/sellylu/TweetforMe/blob/master/image/rnn_struc.png "RNN Structure")
 
 4. Keyword categorization: WordNet
 
-![Result Demostration](https://github.com/sellylu/TweetforMe/tree/master/image/result.png "Result Demostration")
+![Result Demostration](https://github.com/sellylu/TweetforMe/blob/master/image/result.png "Result Demostration")
 
 ## Reference
 
-1. Emotion-English Dataset: https://github.com/huseinzol05/NLP-Dataset
+1. Emotion-English Dataset: [https://github.com/huseinzol05/NLP-Dataset
 2. WordNet: https://wordnet.princeton.edu/
 8. Mikolov, T., Karafiát, M., Burget, L., Černocký, J., &amp; Khudanpur, S. (2010). Recurrent neural network based language model. In Eleventh Annual Conference of the International Speech Com
 munication Association.
