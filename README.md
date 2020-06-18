@@ -36,4 +36,4 @@ Emotion-English Dataset: https://github.com/huseinzol05/NLP-Dataset
 
 ## Acknowledgement
 
-Thanks to Prof. Jason S. Chang giving the course and TAs helping us go through all the labs. Thanks to my teammate @chuangyc work so hard to complete this project together withn very short time.
+Thanks to Prof. Jason S. Chang giving the course and TAs helping us go through all the labs. Thanks to my teammate [@chuangyc](https://github.com/chuangyc) work so hard to complete this project together withn very short time.
